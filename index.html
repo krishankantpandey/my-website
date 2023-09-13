@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Krish">
+        <meta name="description" content="This page is being used to learn HTML.">
+        <title>My First Web Page</title>
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>Hello World!</h1>
+
+        <hr>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <hr>
+            
+        <section id="html">
+            <h2>This is first subheading.</h2>
+            <p>This is my first webpage using HTML.</p>
+
+            <img src="img/html5.png" alt="HTML 5 logo" title="I am adding image." width="300">
+            <figure> 
+                <figcaption> An example of HTML code.</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                </p>
+            </figure>
+
+            <h3>This is second subtopic.</h3>
+            <p>I will learn HTML today.</p>
+
+            <ul>
+                <li>I am really excited</li>
+                <li>I am learning from 
+                <abbr title="free code camp">
+                <a href="https://www.freecodecamp.org/">FCC</a>
+                </abbr>.</li>
+            </ul>
+
+        </section>
+            
+        <hr>
+
+        <section id="vacation">
+            <h2>I am also planning a vacation.</h2>
+            <p>I've been saving my salary <em>for a good trip.</em></p>
+
+            <h3>Places I'd like to visit.</h3>
+            <p>I would love to visit <strong>Hawaii.</strong></p>
+
+            <figure>
+                <img src="img/pexels-asad-photo-maldives-1024989.jpg" alt="Beach Image" title="I will visit here." width="390" height="300" loading="lazy">
+                <figcaption>Beach Image</figcaption>
+            </figure>
+            
+
+            <h3>Places I'd like to not visit.</h3>
+            <p>No cold places</p>
+
+            <figure>
+                <img src="img/images(2).jpg" alt="" title="Sand" width="300" height="250" loading="lazy">
+                <figcaption> This is nice.</figcaption>
+            </figure>
+            
+
+            <dl>
+                <dt>North Pole</dt>
+                <dd>The place is really cold.</dd>
+
+                <dt>Equator</dt>
+                <dd>The place is really hot.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I would like to really hear from you.</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jake" autocomplete="on" required autofocus>
+                    </p>
+
+                    <p>
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Biden" autocomplete="on" required>
+                    </p>
+                    
+                    <p>
+                        <label for="Password">Password: </label>
+                        <input type="password" name="Password" id="Password" required >
+                    </p>
+                    
+                    <p>
+                        <label for="Phone">Phone: </label>
+                        <input type="tel" name="Phone" id="Phone" 
+                        placeholder="+91 9087987677" pattern="[0-9]{3}[0-9]{10}" required >
+                    </p>
+                    
+                    <p>
+                        <label for="dob">DOB: </label>
+                        <input type="number" name="dob" id="dob" 
+                        min="1" max="31" step="1" value="1">
+                        <label for="mob"></label>
+                        <input type="number" name="mob" id="mob" 
+                        min="1" max="12" step="1" value="1">
+                        <label for="yob"> </label>
+                        <input type="number" name="yob" id="yob" 
+                        min="1990" max="2009" step="1" value="2000">
+                    </p>
+
+                    <p>
+                        <label for="coffee"> Favourite Cofee</label>
+                        <select name="coffee" id="coffee">
+                            <optgroup label="Coffees">
+                                <option value="regular">Regular Coffee</option>
+                                <option value="capuccino">Capuccino</option>
+                            </optgroup>
+                            <option value="iced coffee">Iced Coffee</option>
+                            <option value="other">Others</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>What is your favourite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="pets" id="otherpets" value="otherpets">
+                        <label for="otherpets">Others</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+
+        </article>
+            
+        <hr>
+
+        &lt;&lt;&lt; &copy; <a href="about.html" target="_blank">Krish</a> &gt;&gt;&gt;
+
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+
+    </body>
+
+</html>
